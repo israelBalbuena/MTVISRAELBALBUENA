@@ -15,9 +15,10 @@ class Familiares(models.Model):
 
     fecha_nacimiento = models.DateTimeField()
 
-    altura = models.IntegerField()
+    altura = models.FloatField()
 
     email = models.EmailField(max_length = 50)
+
 
 
 

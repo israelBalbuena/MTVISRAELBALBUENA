@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Familiares',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=True, verbose_name='ID')),
                 ('parentesco', models.CharField(max_length=50)),
                 ('nombre', models.CharField(max_length=50)),
                 ('apellido', models.CharField(max_length=50)),
