@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 
 from pathlib import Path
 
+import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -55,7 +57,10 @@ ROOT_URLCONF = 'MTVISRAELBAL.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [r"C:\Users\israe\Desktop\MVTISRAELBALBUENA\MTVISRAELBAL\MTVISRAELBAL\Templates"],
+        'DIRS': [ r"MTVISRAELBAL\Templates"],
+        # os.getcwd() + " \\Templates"  ESTA OPCION NO ME FUNCIONÓ
+        # archivo = open(os.getcwd() +"\\test_coder\\templates\\inicio.html") ESTA OPCION ES LA OCUPÉ CUANDO EL PROFE PIDIO QUE INVETIGARAMOS Y ME FUNCIONÓ
+        # PERO AHORA NO FUNCIONÓ PORQUE NO ESTOY USANDO LA FUNCIÓN OPEN()
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
