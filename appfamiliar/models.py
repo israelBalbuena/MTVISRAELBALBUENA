@@ -13,7 +13,7 @@ class Familiares(models.Model):
 
     edad  = models.IntegerField()   
 
-    fecha_nacimiento = models.DateTimeField()
+    fecha_nacimiento = models.DateField()
 
     altura = models.FloatField()
 
